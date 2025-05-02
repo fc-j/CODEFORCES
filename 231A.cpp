@@ -5,7 +5,7 @@ int main() {
     int n =0;cin>>n; 
     for(int i =0; i<n; i++){
         int t=0; 
-        int a, b, c; cin>>a>>b>>c; 
+        int a, b, c; cin>>a>>b>>c;      
         if(a==1){
             t++; 
         }if(b==1){

@@ -5,21 +5,17 @@ using namespace std;
 int main() {
     string cad;
     char c; 
-    int cont=0, a; 
-    cin >>a; 
-    for (int i = 0; i < a; i++) {
-        cin>>c; 
+    int cnt=0, a; 
+    cin>>a;
+    for(int i=0; i<a; i++){
+        cin >>c;
         cad.push_back(c); 
     }
-
-    for(int i =0;i <a; i++){
-       for(int j=i+1; j<a; j++){
-            cout<<cad.at(i)<<" "<<cad.at(j)<<endl;   
-        /*  if(cad.at(i)==cad.at(j)){
-                cont++; 
-            } */    
-       }
+    for(int i =0,j=i+1; j <a; i++, j++){
+        if (cad.at(i)==cad.at(j)){
+            cnt++; 
+        }
     }
-    cout<<cont; 
+    cout<<cnt; 
     return 0;
 }
