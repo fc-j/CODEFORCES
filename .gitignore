@@ -4,5 +4,4 @@ obj/
 *.depend
 
 *.cbp
-*.in
-*.out
+
